@@ -1,0 +1,1 @@
+ip = input_script();
