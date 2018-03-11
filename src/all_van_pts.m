@@ -6,6 +6,7 @@ vpts = zeros(num, 3);
 for i=1:num
     i4 = 4*i;
     vpts(i,:) = van_pt( pts((i4-3):i4,:) );
+end
 
 end
 
