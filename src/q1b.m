@@ -1,11 +1,11 @@
 ip = input_script();
-[x,y] = read_points(ip.img, '4 pts for one square - TL->BL->BR->TR.');
+[x,y] = read_points(ip.img1, '4 pts for one square - TL->BL->BR->TR.');
 pts_H1 = [x y 1];
 s1 = read_number('H1 transformed square', 'Square side in pixels: ');
-[x,y] = read_points(ip.img, '4 pts for one square - TL->BL->BR->TR.');
+[x,y] = read_points(ip.img2, '4 pts for one square - TL->BL->BR->TR.');
 pts_H2 = [x y 1];
 s2 = read_number('H2 transformed square', 'Square side in pixels: ');
-[x,y] = read_points(ip.img, '4 pts for one square - TL->BL->BR->TR.');
+[x,y] = read_points(ip.img3, '4 pts for one square - TL->BL->BR->TR.');
 pts_H3 = [x y 1];
 s3 = read_number('H3 transformed square', 'Square side in pixels: ');
 

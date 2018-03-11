@@ -1,25 +1,25 @@
 function [ ip ] = input_script()
 
-%COMMON:
-% ip.scale : input image reading scale
-% ip.img : read (scaled) image
+%     im_file = '../given-images/cb1.jpg';
+%     scale = 0.1;
+%     im_file = '../given-images/cb2.jpg';
+%     scale = 0.1;
+%     im_file = '../given-images/cb3.jpg';
+%     scale = 0.1;
+%     im_file = '../given-images/cb4.jpg';
+%     scale = 0.1;
+%     im_file = '../given-images/cb5.jpg';
+%     scale = 0.1;
+    im_file = '../given-images/image2_2.png';
+    scale = 1;
+    ip.img1 = read_image(im_file, scale);
+    ip.img2 = ip.img1;
+    ip.img3 = ip.img1;
+    ip.img4 = ip.img1;
+    ip.img5 = ip.img1;
+%     im_file = '../given-images/img1.jpg';
+%     scale = 0.1;
+%     im_file = '../given-images/img2.jpg';
+%     scale = 0.1;
 
-%     IMG_FILE = '../given-images/cb1.jpg';
-%     ip.scale = 0.1;
-%     IMG_FILE = '../given-images/cb2.jpg';
-%     ip.scale = 0.1;
-%     IMG_FILE = '../given-images/cb3.jpg';
-%     ip.scale = 0.1;
-%     IMG_FILE = '../given-images/cb4.jpg';
-%     ip.scale = 0.1;
-%     IMG_FILE = '../given-images/cb5.jpg';
-%     ip.scale = 0.1;
-    IMG_FILE = '../given-images/image2_2.png';
-    ip.scale = 1;
-%     IMG_FILE = '../given-images/img1.jpg';
-%     ip.scale = 0.1;
-%     IMG_FILE = '../given-images/img2.jpg';
-%     ip.scale = 0.1;
-
-    ip.img = read_image(IMG_FILE, ip.scale);
 end
