@@ -1,10 +1,7 @@
 ip = input_script();
-[x,y] = read_points(ip.img1, '8 pts for 1 pair of normal van pts.');
-pts1 = [x y 1];
-[x,y] = read_points(ip.img2, '8 pts for 1 pair of normal van pts.');
-pts2 = [x y 1];
-[x,y] = read_points(ip.img3, '8 pts for 1 pair of normal van pts.');
-pts3 = [x y 1];
+[~,~,pts1] = read_points(ip.img1, '8 pts for 1 pair of normal van pts.');
+[~,~,pts2] = read_points(ip.img2, '8 pts for 1 pair of normal van pts.');
+[~,~,pts3] = read_points(ip.img3, '8 pts for 1 pair of normal van pts.');
 
 vpts = all_van_pts([pts1;pts2;pts3]);
 eqs = zeros(3, 4);

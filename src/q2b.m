@@ -1,9 +1,7 @@
 ip = input_script();
-[x,y] = read_points(ip.img1, '4 pts for one square - TL->BL->BR->TR.');
-pts_H1 = [x y 1];
+[~,~,pts_H1] = read_points(ip.img1, '4 pts for one square - TL->BL->BR->TR.');
 s1 = read_number('H1 transformed square', 'Square side in pixels: ');
-[x,y] = read_points(ip.img2, '4 pts for one square - TL->BL->BR->TR.');
-pts_H2 = [x y 1];
+[~,~,pts_H2] = read_points(ip.img2, '4 pts for one square - TL->BL->BR->TR.');
 s2 = read_number('H2 transformed square', 'Square side in pixels: ');
 
 H1 = sq_homog_inferred(pts_H1, s1);
