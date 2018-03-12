@@ -3,7 +3,7 @@ ip = input_script();
 % s1 = read_number('H1 transformed square', 'Square side in pixels: ');
 [~,~,pts_H2] = read_points(ip.img2, '4 pts for one square - TL->BL->BR->TR.');
 % s2 = read_number('H2 transformed square', 'Square side in pixels: ');
-[~,~,pts_H3] = read_points(ip.img3, '4 pts for one square - TL->BL->BR->TR.');
+[~,~,pts_H3] = read_points(ip.img4, '4 pts for one square - TL->BL->BR->TR.');
 % s3 = read_number('H3 transformed square', 'Square side in pixels: ');
 
 [pts_H1n,T1] = pointnorm(pts_H1);
