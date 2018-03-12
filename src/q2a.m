@@ -12,4 +12,4 @@ for i=1:3
 end
 
 omega = T' * solve_omega(eqs, 1) * T;
-output_script(omega);
+[omega_n, K] = output_script(omega);

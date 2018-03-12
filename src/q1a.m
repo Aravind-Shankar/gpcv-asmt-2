@@ -14,4 +14,4 @@ for i=1:5
 end
 
 omega = T' * solve_omega(eqs, 0) * T;
-output_script(omega);
+[omega_n, K] = output_script(omega);

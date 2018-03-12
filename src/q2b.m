@@ -18,4 +18,4 @@ eqs(2,:) = constr_multiple(H1(:,1), H1(:,2), 1);
 eqs(3,:) = constr_single(H2(:,1), H2(:,2), 1);
 
 omega = solve_omega(eqs, 1);
-output_script(omega);
+[omega_n, K] = output_script(omega);
