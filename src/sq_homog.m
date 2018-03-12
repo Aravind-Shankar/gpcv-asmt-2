@@ -15,7 +15,7 @@ for i=1:4
 end
 
 h = null(A);
-H = reshape(h, [3,3])'; % reshape() does col-major
+H = inv(reshape(h, [3,3])'); % reshape() does col-major, inv to get H(1 +-i 0) form
 
 end
 
